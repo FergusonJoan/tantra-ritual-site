@@ -1,5 +1,4 @@
 /* ===== ОБЩИЕ СТИЛИ ===== */
-
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
@@ -1841,5 +1840,91 @@ footer a {
   .program-image-section .program-kicker {
     font-size: 16px;
     letter-spacing: 0.2em;
+  }
+}
+
+/* =========================================================
+   RULES
+========================================================= */
+
+.rules {
+  background: #e8e2da;
+  color: #161616;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 10vw;
+}
+
+.rules-main h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(45px, 5vw, 75px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.rules-list {
+  max-width: 700px;
+}
+
+.rule {
+  padding: 19px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  font-size: 16px;
+}
+
+.rule:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.rule.strong {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+  /* =====================================================
+       RULES — MOBILE
+    ====================================================== */
+
+  .rules {
+    padding: 80px 20px;
+  }
+
+  .rules .section-label {
+    margin-bottom: 45px;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+  }
+
+  .rules-grid {
+    display: block;
+  }
+
+  .rules-main {
+    margin-bottom: 45px;
+  }
+
+  .rules-main h2 {
+    font-size: clamp(42px, 12vw, 58px);
+    line-height: 0.95;
+  }
+
+  .rules-list {
+    width: 100%;
+    max-width: none;
+  }
+
+  .rule {
+    padding: 17px 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .rule.strong {
+    font-size: 15px;
+    font-weight: 600;
   }
 }
